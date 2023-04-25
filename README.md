@@ -16,7 +16,7 @@ Adaptive 3D Spatial Audio for Godot 4
 
 This is basically the length of the raycasts. 25 seems to be an okay value but you might need to increase it for your own project.
 
-**AAP AutoPlay*
+**AAP AutoPlay**
 
 Use this instead of default Autoplay if you want the audio to adapt it's surroundings.
 
