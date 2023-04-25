@@ -5,10 +5,10 @@ Adaptive 3D Spatial Audio for Godot 4
 
 1. Extract the files to your project
 2. Set aaplayout.tres to be your default bus layout
-3. Create and autoload for player_autoload.gd and name it PlayerAutoload
+3. Create an autoload for player_autoload.gd and name it PlayerAutoload
 4. Set PlayerAutoload.player to your player node
 5. Add an AdaptiveAudioPlayer node and give it a sound file
-6. Play the sound using play_sfx()
+6. Play the sound using play_sfx()*
 
 ![image](https://user-images.githubusercontent.com/47716519/234263669-83da348d-4278-4838-8da4-0bb273280832.png)
 
@@ -32,3 +32,5 @@ Enabling ContinuousAdapt will make sure adaptation happens everyframe if not ena
 
 You can adjust thresholds for each preset to your liking. Although I recommend leaving it as is since I find this settings to work best for most situations.
 
+
+* *Using play() will play the audio but won't adapt so use play_sfx() instead
