@@ -5,4 +5,3 @@
 [node name="AdaptiveAudioPlayer" type="AudioStreamPlayer3D"]
 max_distance = 1000.0
 script = ExtResource("1_p0sww")
-debug = true

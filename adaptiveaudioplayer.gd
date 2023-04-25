@@ -1,6 +1,6 @@
 #Adaptive Audio Player made by berryberryniceu
 
-@icon("res://adaptive-audio-player/aap.svg")
+@icon("res://adaptive-audio-player-main/aap.svg")
 extends AudioStreamPlayer3D
 
 class_name AdaptiveAudioPlayer
