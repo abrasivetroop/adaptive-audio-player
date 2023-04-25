@@ -10,12 +10,25 @@ Adaptive 3D Spatial Audio for Godot 4
 5. Add an AdaptiveAudioPlayer node and give it a sound file
 6. Play the sound using play_sfx()
 
+![image](https://user-images.githubusercontent.com/47716519/234263669-83da348d-4278-4838-8da4-0bb273280832.png)
+
+**Adaption Range**
+
+This is basically the length of the raycasts. 25 seems to be an okay value but you might need to increase it for your own project.
+
+**AAP AutoPlay*
+
+Use this instead of default Autoplay if you want the audio to adapt it's surroundings.
+
+**Debug**
+
+This will print info about the room size and current preset. You might need it to adjust the threshold values. 
+
 **Continuous Adapt**
 
 Enabling ContinuousAdapt will make sure adaptation happens everyframe if not enabled it will only adapt once. If your audio source is dynamic make sure to enable ContinuousAdapt
 
-![image](https://user-images.githubusercontent.com/47716519/234263183-af5a40a6-9674-4aec-8f49-7ae2c0b4da92.png)
-
 **Thresholds**
 
 You can adjust thresholds for each preset to your liking. Although I recommend leaving it as is since I find this settings to work best for most situations.
+
