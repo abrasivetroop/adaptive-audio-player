@@ -32,5 +32,5 @@ Enabling ContinuousAdapt will make sure adaptation happens everyframe if not ena
 
 You can adjust thresholds for each preset to your liking. Although I recommend leaving it as is since I find this settings to work best for most situations.
 
-
-* *Using play() will play the audio but won't adapt so use play_sfx() instead
+Notes:
+*Using play() will play the audio but won't adapt so use play_sfx() instead
