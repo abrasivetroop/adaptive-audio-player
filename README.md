@@ -3,7 +3,7 @@ Adaptive 3D Spatial Audio for Godot 4
 
 **Installation**
 
-1. Extract the files to your project
+1. Move adaptive-audio-player-main into your project files
 2. Set aaplayout.tres to be your default bus layout
 3. Create an autoload for player_autoload.gd and name it PlayerAutoload
 4. Set PlayerAutoload.player to your player node
