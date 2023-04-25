@@ -1,40 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmllv7sc2ysed"]
+[gd_scene load_steps=2 format=3 uid="uid://bsvyjwvhkdakd"]
 
-[ext_resource type="Script" path="res://Adaptive Audio Player/adaptiveaudioplayer.gd" id="1_p0sww"]
+[ext_resource type="Script" path="res://adaptive-audio-player/adaptiveaudioplayer.gd" id="1_p0sww"]
 
 [node name="AdaptiveAudioPlayer" type="AudioStreamPlayer3D"]
 max_distance = 1000.0
 script = ExtResource("1_p0sww")
 debug = true
-
-[node name="detectors" type="Node3D" parent="."]
-unique_name_in_owner = true
-
-[node name="up" type="RayCast3D" parent="detectors"]
-unique_name_in_owner = true
-enabled = false
-target_position = Vector3(0, 1, 0)
-
-[node name="right" type="RayCast3D" parent="detectors"]
-unique_name_in_owner = true
-enabled = false
-target_position = Vector3(0, 0, 1)
-
-[node name="left" type="RayCast3D" parent="detectors"]
-unique_name_in_owner = true
-enabled = false
-target_position = Vector3(0, 0, -1)
-
-[node name="front" type="RayCast3D" parent="detectors"]
-unique_name_in_owner = true
-enabled = false
-target_position = Vector3(1, 0, 0)
-
-[node name="back" type="RayCast3D" parent="detectors"]
-unique_name_in_owner = true
-enabled = false
-target_position = Vector3(-1, 0, 0)
-
-[node name="player_check" type="RayCast3D" parent="detectors" groups=["player_check"]]
-unique_name_in_owner = true
-enabled = false

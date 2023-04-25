@@ -1,17 +1,17 @@
 #Adaptive Audio Player made by berryberryniceu
 
-@icon("res://Adaptive Audio Player/aap.svg")
+@icon("res://adaptive-audio-player/aap.svg")
 extends AudioStreamPlayer3D
 
 class_name AdaptiveAudioPlayer
 
-@onready var detectors: Node = %detectors
-@onready var up: Node = %up
-@onready var right: Node = %right
-@onready var left: Node = %left
-@onready var front: Node = %front
-@onready var back: Node = %back
-@onready var player_check: Node = %player_check
+@onready var detectors: Node3D = Node3D.new()
+@onready var up: RayCast3D = RayCast3D.new()
+@onready var right: RayCast3D = RayCast3D.new()
+@onready var left: RayCast3D = RayCast3D.new()
+@onready var front: RayCast3D = RayCast3D.new()
+@onready var back: RayCast3D = RayCast3D.new()
+@onready var player_check: RayCast3D = RayCast3D.new()
 
 @export var adaptionRange: int = 25
 @export var AAPAutoPlay: bool = false
@@ -26,6 +26,20 @@ class_name AdaptiveAudioPlayer
 var type: String = "Generic"
 
 func _ready() -> void:
+	add_child(detectors)
+	detectors.add_child(up)
+	up.target_position = Vector3(0,1,0)
+	detectors.add_child(right)
+	right.target_position = Vector3(0,0,1)
+	detectors.add_child(left)
+	left.target_position = Vector3(0,0,-1)
+	detectors.add_child(front)
+	front.target_position = Vector3(1,0,0)
+	detectors.add_child(back)
+	back.target_position = Vector3(-1,0,0)
+	detectors.add_child(player_check)
+	player_check.target_position = Vector3(0,-1,0)
+	player_check.add_to_group("player_check")
 	
 	detectors.set_as_top_level(true)
 	rotation = Vector3.ZERO
@@ -40,7 +54,7 @@ func _physics_process(_delta) -> void:
 	player_check.set_target_position(get_viewport().get_camera_3d().global_position - global_position)
 	detectors.global_position = global_position
 	for n in detectors.get_children():
-		n.add_exception(Global.player)
+		n.add_exception(PlayerAutoload.player)
 		
 	if ContinuousAdapt and is_playing():
 		adapt()
