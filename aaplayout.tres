@@ -1,0 +1,296 @@
+[gd_resource type="AudioBusLayout" load_steps=29 format=3 uid="uid://b3uk22obobhd6"]
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_xlq3r"]
+resource_name = "Delay"
+tap1_active = false
+tap2_active = false
+feedback_active = true
+feedback_delay_ms = 240.0
+feedback_level_db = -24.0
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_mgbd1"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_1843p"]
+resource_name = "Delay"
+tap1_active = false
+tap2_active = false
+feedback_active = true
+feedback_delay_ms = 440.0
+feedback_level_db = -16.0
+feedback_lowpass = 7500.0
+
+[sub_resource type="AudioEffectLowPassFilter" id="AudioEffectLowPassFilter_p5tps"]
+resource_name = "LowPassFilter"
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_yrst3"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_l6gja"]
+resource_name = "Reverb"
+predelay_feedback = 0.0
+room_size = 0.2
+spread = 0.5
+wet = 0.1
+
+[sub_resource type="AudioEffectLowPassFilter" id="AudioEffectLowPassFilter_pkan4"]
+resource_name = "LowPassFilter"
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_bbhqe"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_sijhh"]
+resource_name = "Delay"
+tap1_active = false
+tap2_active = false
+feedback_active = true
+feedback_delay_ms = 240.0
+feedback_level_db = -20.0
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_2x4e4"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_mpe52"]
+resource_name = "Delay"
+tap1_active = false
+tap2_active = false
+feedback_active = true
+feedback_delay_ms = 240.0
+feedback_level_db = -24.0
+feedback_lowpass = 2000.0
+
+[sub_resource type="AudioEffectLowPassFilter" id="AudioEffectLowPassFilter_k1xwx"]
+resource_name = "LowPassFilter"
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_382cd"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_y2j5d"]
+resource_name = "Delay"
+tap1_active = false
+tap2_active = false
+feedback_active = true
+feedback_delay_ms = 440.0
+feedback_level_db = -16.0
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_angg1"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_tj55u"]
+resource_name = "Delay"
+tap1_active = false
+tap2_active = false
+feedback_active = true
+feedback_level_db = -20.0
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_oqkbq"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_x3d4i"]
+resource_local_to_scene = true
+resource_name = "Reverb"
+predelay_feedback = 0.0
+room_size = 0.3
+damping = 0.0
+hipass = 1.0
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_tjuk6"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_xmiww"]
+resource_name = "Delay"
+tap1_active = false
+tap1_delay_ms = 200.0
+tap1_level_db = -20.0
+tap2_active = false
+tap2_delay_ms = 300.0
+tap2_level_db = -24.0
+feedback_active = true
+feedback_delay_ms = 240.0
+feedback_level_db = -20.0
+feedback_lowpass = 7000.0
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_tcmnb"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_82mbk"]
+resource_name = "Reverb"
+predelay_feedback = 0.0
+room_size = 0.3
+damping = 0.35
+hipass = 0.8
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_7xpb6"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectDelay" id="AudioEffectDelay_m3qvk"]
+resource_name = "Delay"
+tap1_active = false
+tap2_active = false
+feedback_active = true
+feedback_delay_ms = 240.0
+feedback_level_db = -20.0
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_5jvny"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_gb5qf"]
+resource_name = "Reverb"
+predelay_feedback = 0.0
+room_size = 0.3
+hipass = 0.5
+
+[sub_resource type="AudioEffectCompressor" id="AudioEffectCompressor_4njxi"]
+resource_name = "Compressor"
+
+[sub_resource type="AudioEffectReverb" id="AudioEffectReverb_sht7c"]
+resource_name = "Reverb"
+predelay_feedback = 0.0
+room_size = 0.3
+hipass = 0.5
+
+[resource]
+bus/1/name = &"Generic"
+bus/1/solo = false
+bus/1/mute = false
+bus/1/bypass_fx = false
+bus/1/volume_db = 0.0
+bus/1/send = &"Master"
+bus/1/effect/0/effect = SubResource("AudioEffectDelay_xlq3r")
+bus/1/effect/0/enabled = true
+bus/1/effect/1/effect = SubResource("AudioEffectCompressor_mgbd1")
+bus/1/effect/1/enabled = true
+bus/2/name = &"Open"
+bus/2/solo = false
+bus/2/mute = false
+bus/2/bypass_fx = false
+bus/2/volume_db = 0.0
+bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectDelay_y2j5d")
+bus/2/effect/0/enabled = true
+bus/2/effect/1/effect = SubResource("AudioEffectCompressor_angg1")
+bus/2/effect/1/enabled = true
+bus/3/name = &"Open 2"
+bus/3/solo = false
+bus/3/mute = false
+bus/3/bypass_fx = false
+bus/3/volume_db = 0.0
+bus/3/send = &"Master"
+bus/3/effect/0/effect = SubResource("AudioEffectDelay_tj55u")
+bus/3/effect/0/enabled = true
+bus/3/effect/1/effect = SubResource("AudioEffectCompressor_oqkbq")
+bus/3/effect/1/enabled = true
+bus/4/name = &"Room Small"
+bus/4/solo = false
+bus/4/mute = false
+bus/4/bypass_fx = false
+bus/4/volume_db = -0.00162125
+bus/4/send = &"Master"
+bus/4/effect/0/effect = SubResource("AudioEffectReverb_x3d4i")
+bus/4/effect/0/enabled = true
+bus/4/effect/1/effect = SubResource("AudioEffectCompressor_tjuk6")
+bus/4/effect/1/enabled = true
+bus/5/name = &"Tunnel Small"
+bus/5/solo = false
+bus/5/mute = false
+bus/5/bypass_fx = false
+bus/5/volume_db = 0.0
+bus/5/send = &"Master"
+bus/5/effect/0/effect = SubResource("AudioEffectDelay_xmiww")
+bus/5/effect/0/enabled = true
+bus/5/effect/1/effect = SubResource("AudioEffectReverb_x3d4i")
+bus/5/effect/1/enabled = true
+bus/5/effect/2/effect = SubResource("AudioEffectCompressor_tcmnb")
+bus/5/effect/2/enabled = true
+bus/6/name = &"Room Medium"
+bus/6/solo = false
+bus/6/mute = false
+bus/6/bypass_fx = false
+bus/6/volume_db = 0.0
+bus/6/send = &"Master"
+bus/6/effect/0/effect = SubResource("AudioEffectReverb_82mbk")
+bus/6/effect/0/enabled = true
+bus/6/effect/1/effect = SubResource("AudioEffectCompressor_7xpb6")
+bus/6/effect/1/enabled = true
+bus/7/name = &"Tunnel Medium"
+bus/7/solo = false
+bus/7/mute = false
+bus/7/bypass_fx = false
+bus/7/volume_db = 0.0
+bus/7/send = &"Master"
+bus/7/effect/0/effect = SubResource("AudioEffectDelay_m3qvk")
+bus/7/effect/0/enabled = true
+bus/7/effect/1/effect = SubResource("AudioEffectReverb_82mbk")
+bus/7/effect/1/enabled = false
+bus/7/effect/2/effect = SubResource("AudioEffectCompressor_5jvny")
+bus/7/effect/2/enabled = true
+bus/8/name = &"Room Big"
+bus/8/solo = false
+bus/8/mute = false
+bus/8/bypass_fx = false
+bus/8/volume_db = 0.0
+bus/8/send = &"Master"
+bus/8/effect/0/effect = SubResource("AudioEffectReverb_gb5qf")
+bus/8/effect/0/enabled = true
+bus/8/effect/1/effect = SubResource("AudioEffectCompressor_4njxi")
+bus/8/effect/1/enabled = true
+bus/9/name = &"Tunnel Big"
+bus/9/solo = false
+bus/9/mute = false
+bus/9/bypass_fx = false
+bus/9/volume_db = 0.0
+bus/9/send = &"Master"
+bus/9/effect/0/effect = SubResource("AudioEffectReverb_sht7c")
+bus/9/effect/0/enabled = true
+bus/9/effect/1/effect = SubResource("AudioEffectCompressor_4njxi")
+bus/9/effect/1/enabled = true
+bus/10/name = &"Damped Open"
+bus/10/solo = false
+bus/10/mute = false
+bus/10/bypass_fx = false
+bus/10/volume_db = 0.0
+bus/10/send = &"Master"
+bus/10/effect/0/effect = SubResource("AudioEffectDelay_1843p")
+bus/10/effect/0/enabled = true
+bus/10/effect/1/effect = SubResource("AudioEffectLowPassFilter_p5tps")
+bus/10/effect/1/enabled = true
+bus/10/effect/2/effect = SubResource("AudioEffectCompressor_yrst3")
+bus/10/effect/2/enabled = true
+bus/11/name = &"Damped Room"
+bus/11/solo = false
+bus/11/mute = false
+bus/11/bypass_fx = false
+bus/11/volume_db = 0.0
+bus/11/send = &"Master"
+bus/11/effect/0/effect = SubResource("AudioEffectReverb_l6gja")
+bus/11/effect/0/enabled = true
+bus/11/effect/1/effect = SubResource("AudioEffectLowPassFilter_pkan4")
+bus/11/effect/1/enabled = true
+bus/11/effect/2/effect = SubResource("AudioEffectCompressor_bbhqe")
+bus/11/effect/2/enabled = true
+bus/12/name = &"Damped Tunnel"
+bus/12/solo = false
+bus/12/mute = false
+bus/12/bypass_fx = false
+bus/12/volume_db = 0.0
+bus/12/send = &"Master"
+bus/12/effect/0/effect = SubResource("AudioEffectDelay_sijhh")
+bus/12/effect/0/enabled = true
+bus/12/effect/1/effect = SubResource("AudioEffectReverb_l6gja")
+bus/12/effect/1/enabled = true
+bus/12/effect/2/effect = SubResource("AudioEffectLowPassFilter_pkan4")
+bus/12/effect/2/enabled = true
+bus/12/effect/3/effect = SubResource("AudioEffectCompressor_2x4e4")
+bus/12/effect/3/enabled = true
+bus/13/name = &"Damped Generic"
+bus/13/solo = false
+bus/13/mute = false
+bus/13/bypass_fx = false
+bus/13/volume_db = 0.0
+bus/13/send = &"Master"
+bus/13/effect/0/effect = SubResource("AudioEffectDelay_mpe52")
+bus/13/effect/0/enabled = true
+bus/13/effect/1/effect = SubResource("AudioEffectLowPassFilter_k1xwx")
+bus/13/effect/1/enabled = true
+bus/13/effect/2/effect = SubResource("AudioEffectCompressor_382cd")
+bus/13/effect/2/enabled = true
