@@ -49,4 +49,4 @@ https://berryberryniceu.itch.io/adaptive-audio-for-godot-demo
 
 #### Notes:
 **Using play() will play the audio but won't adapt so use play_sfx() instead*
-**Steps 3 and 4 is optional but recommended
+**Steps 3 and 4 is optional but recommended*
