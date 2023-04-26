@@ -1,4 +1,4 @@
-#  ![aap](https://user-images.githubusercontent.com/47716519/234523753-aaeaed2d-3daf-49a6-87f4-fc210591138a.svg) adaptive-audio-player
+# ![aap](https://user-images.githubusercontent.com/47716519/234524450-b446aec0-6ad6-4919-b9e1-b75e6710016a.svg) adaptive-audio-player
 Adaptive 3D Spatial Audio for Godot 4
 
 
