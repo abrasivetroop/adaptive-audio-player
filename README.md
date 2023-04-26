@@ -46,6 +46,10 @@ You can edit each preset to your liking as well.
 Check out the demo here:
 https://berryberryniceu.itch.io/adaptive-audio-for-godot-demo
 
+## Video Tutorial
+
+https://youtu.be/5Gm767RLKRg
+
 #### Notes:
 **Using play() will play the audio but won't adapt so use play_sfx() instead*
 
