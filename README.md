@@ -1,7 +1,7 @@
 # adaptive-audio-player
 Adaptive 3D Spatial Audio for Godot 4
 
-## Installation
+## ✨Installation
 
 1. Move adaptive-audio-player-main into your project files
 2. Set aaplayout.tres to be your default bus layout
@@ -32,7 +32,7 @@ Enabling ContinuousAdapt will make sure adaptation happens everyframe if not ena
 
 You can adjust thresholds for each preset to your liking. Although I recommend leaving it as is since I find this settings to work best for most situations.
 
-## Demo
+## ✨Demo
 
 ![image](https://user-images.githubusercontent.com/47716519/234267702-1e24c9ae-0c61-4c3e-bc03-bb1a83ab5cd6.png)
 
