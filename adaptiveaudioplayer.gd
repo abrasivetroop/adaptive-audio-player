@@ -53,8 +53,9 @@ func _ready() -> void:
 func _physics_process(_delta) -> void:
 	player_check.set_target_position(get_viewport().get_camera_3d().global_position - global_position)
 	detectors.global_position = global_position
-	for n in detectors.get_children():
-		n.add_exception(PlayerAutoload.player)
+	if PlayerAutoload.player != null:
+		for n in detectors.get_children():
+			n.add_exception(PlayerAutoload.player)
 		
 	if ContinuousAdapt and is_playing():
 		adapt()
