@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsvyjwvhkdakd"]
-
-[ext_resource type="Script" path="res://adaptive-audio-player/adaptiveaudioplayer.gd" id="1_p0sww"]
-
-[node name="AdaptiveAudioPlayer" type="AudioStreamPlayer3D"]
-max_distance = 1000.0
-script = ExtResource("1_p0sww")
