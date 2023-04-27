@@ -2,6 +2,8 @@
 Adaptive 3D Spatial Audio for Godot 4
 * Fully dynamic 3d audio with 13 presets
 
+Adaptive audio is an audio player that will adapt to it's surroundings. It will apply effects accordingly to make the sounds more immersive. Like if it's played in an open area it will apply an echo or if it's played in a room it will apply a reverb. It also approximately calculates the room size to determine the reverberation size. It will also dampend the audio if it's blocked. 
+
 ## ✨Installation
 
 1. Move adaptive-audio-player-main into your project files
